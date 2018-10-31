@@ -1,0 +1,39 @@
+body, html {
+    background-image: url("../images/2.png");   
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+
+.jumbotron {
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    border: 4px solid  hsla(60, 1%, 61%, 0.767);   
+}
+  
+.btnContainer {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 86px;
+    font-weight: bold;
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style";
+}
+
+#startButton {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style";
+    box-shadow: 0 5px hsla(60, 1%, 61%, 0.767);
+    transform: translateY(4px);
+   
+   
+}
+
+
+   
