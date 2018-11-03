@@ -25,6 +25,19 @@ var trivia = {
     timerId: '',
 }
 
+var allQuestions = [
+  {
+    question: 'Sukiyaki is a popular hot pot dish from what country?',
+    options: ['Japan', 'China', 'Taiwan', 'South-Korea'],
+    answerIndex: 0
+  },
+  {
+    question: 'Hoe\'s jou ma?',
+    options: ['Lekker dankie', 'Hoe\'s JOU ma???', 'Besig om rond te naai', 'Uitgepass'],
+    answer: 2
+  },
+];
+
 //question options and answers
 questions: {
     q1: 'Sukiyaki is a popular hot pot dish from what country?'
@@ -69,3 +82,32 @@ questions: {
       clearInterval(trivia.timerId);
       
      
+      var getRandomizedArray = function(to, count) {
+        if (count <= 0 || to  < 1) {
+          return [];
+        }
+      
+        if (count > to) {
+          count = to;
+        }
+      
+        var output = [];
+        for (var i = 0; i < to; i++) {
+          output.push(i);
+        }
+      
+        for (var i = output.length - 1; i >= output.length - count; i--) {
+          var randomIndex = Math.floor(Math.random() * (i + 1));
+          console.log("random", randomIndex);
+          var temp = output[i];
+          output[i] = output[randomIndex];
+          output[randomIndex] = temp;
+        }
+      
+        console.log(output);
+        return output.slice(output.length - count, output.length);
+      }
+      
+      
+      
+      console.log(getRandomizedArray(467, 5));

@@ -16,23 +16,18 @@
 <div class="container">
     <div id="game">
     <h1>Food Trivia Game</h1>
-        <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+       
         
     </div>
     <div id="results">
     </div>
 </div>
 
-<div><button id="start" class="btn btn-info btn-lg">Start Game</button>
-    <div class="row">
-        <div id="choices" class="text-center">     
-        <div id="options">          
-        </div>        
-        </div>
-    </div>
-</div> 
+<p id="remainingTime">Remaining Time: <span id="secondsRemaining"></span></p>
+  
 
-<div id="questionAnswerBox">
+
+<div id="questionAnswerBox" class="gameBox">
     <div class="questionBox">
        <span id="questionText">What is the answer?</span>
     </div>
@@ -54,9 +49,16 @@
                 <span class="answerOption">Answer D</span>
             </div>
     </div>
+    
+</div>
+<div id="winLoseBox" class="gameBox">
+        You lose!
 </div>
  
-
+<div><button id="start" class="btn btn-info btn-lg">Start Game</button>
+    <div class="row">             
+</div>        
+</div>
 
 
 <div id="status"></div>

@@ -5,18 +5,24 @@ body, html {
 
 .container {
     margin: auto;
-    padding-top: 60px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    padding-top: 30px;
     text-align: center;
     border: 4px solid  hsla(60, 1%, 61%, 0.767);
     background-color: rgb(221, 214, 214) 
 }
 
   
-.lead {
+#remainingTime {
     font-size: 30px;
     font-weight: bold; 
     font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
     margin-top: 60px;
+    width:400px;
+    height:70px;
+    background-color:rgb(169, 197, 171);
+    text-align: center;
  }
 
 h1 {
@@ -34,22 +40,52 @@ h1 {
     transform: translateY(4px);
  }
 
- #question {
+ #questionText {
     text-align: center;
-    font-size: 60px;
-}
-
-#questionAnswerBox {
-    text-align: center;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold; 
     font-family: "Garamond", "Book Antigua", "Bookman Old Style";
+    
+    
 }
 
-.answerOptionBox {
+.questionBox {
+    width: 720px;
+    height: 85px;
+    background-color:rgb(169, 197, 171); 
+    border: 4px solid  hsla(60, 1%, 61%, 0.767);
+}
+
+.gameBox {
+    text-align: center;
+    font-size: 26px;   
+    font-weight: bold; 
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style";   
+    margin-right: 600px;
+    margin-left: 600px;   
+}
+
+.answerOptionBox {   
+    text-align: left;  
     background-color: rgb(199, 86, 86);
     border: 4px solid  hsla(300, 1%, 61%, 0.767); 
      
+}
+
+#start {
+    font-size: 24px; 
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style";  
+    margin-left: 46%;
+    margin-right: -54%;
+    transform: translate(-50%, -50%);    
+    box-shadow: 0 5px hsla(60, 1%, 61%, 0.767);
+    transform: translateY(4px);
+ }
+
+#winLoseBox {
+    font-size: 24px; 
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
+    font-weight: bold;   
 }
 
 
