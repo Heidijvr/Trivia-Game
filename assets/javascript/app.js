@@ -11,7 +11,7 @@ var allQuestions = [
   },
   {
     question: 'Sriracha is type of hot sauce named after a city located in what country?',
-    options: ['India', 'Sri-Lanka', 'Thailand', 'Chili'],
+    options: ['India', 'Sri-Lanka', 'Thailand', 'Chile'],
     answerIndex: 2
   },
   {
@@ -36,60 +36,95 @@ var allQuestions = [
   },
   {
     question: 'Where was the fortune cookie invented?',
-    options: ['California', 'Los-Angeles', 'Japan', 'China'],
+    options: ['California', 'Washington', 'Japan', 'China'],
     answerIndex: 0
   }, 
 ];
 
-var currentQuestionIndex = 0;
+var currentQuestionIndex;
 var seconds;
 var countDownTimer;
+var correctCount;
+var incorrectCount;
+var unansweredCount;
+var currentQuestion;
 
 var startTimer = function() {
   clearInterval(countDownTimer);
-  seconds = 5;
-  $("#secondsRemaining").text(seconds);
+  seconds = 15;
+  $('#secondsRemaining').text(seconds);
 
   countDownTimer = setInterval(function() {
     seconds--;
   
-    $("#secondsRemaining").text(seconds);
+    $('#secondsRemaining').text(seconds);
     
     if (seconds == 0) {
-      stopTimer();
+      // unanswered
+      unansweredCount++;
+      $('#outcome').text('Time\'s up!');
+      $('#correctAnswerBox').show();
+      showQuestionResult();
     } 
   }, 1000);  
 }
 
-var stopTimer = function() {
+var showQuestionResult = function() {
   clearInterval(countDownTimer);
-  $("#questionAnswerBox").hide();
-  $("#winLoseBox").show();
-  $("#secondsRemaining").text("Ha ha! Doos!");
+  $('#quizContainer').hide();
+  $('#questionResult').show();
 
-  setTimeout(displayQuestion, 2000);
+  setTimeout(displayQuestion, 3000);
   currentQuestionIndex++;
 };
 
-$(".answerOptionBox").on("click", function() {
+$('.answerOptionBox').on('click', function() {
   console.log($(this).index());
-
+  
+  if (currentQuestion.answerIndex === $(this).index()) {
+    // right anwser
+    correctCount++;
+    $('#outcome').text('Correct!');
+    $('#correctAnswerBox').hide();
+    showQuestionResult();
+  } else {
+    // wrong answer
+    incorrectCount++;
+    $('#outcome').text('Incorrect!');
+    $('#correctAnswerBox').show();
+    showQuestionResult();    
+  }
 });
 
 var displayQuestion = function() {
-  var currentQuestion = allQuestions[currentQuestionIndex];
-  $("#questionAnswerBox").show();
-  $("#winLoseBox").hide();
+  currentQuestion = allQuestions[currentQuestionIndex];
+  $('#quizContainer').show();
+  $('#questionResult').hide();
+  $('#questionText').text(currentQuestion.question); 
 
-  $("#questionText").text(currentQuestion.question);
-  
   $('.answerOption').each(function(index, element) {
     $(element).text(currentQuestion.options[index]);
   });
+
+  $('#correctAnswer').text(currentQuestion.options[currentQuestion.answerIndex]);
+
   startTimer();
 };
 
-displayQuestion(); 
+$(document).ready(function() {
+  correctCount = 0;
+  incorrectCount = 0;
+  unansweredCount = 0;
+  currentQuestionIndex = 0;
+  $('#quizContainer').hide();
+  $('#questionResult').hide();
+  $('#start').show();
+});
+
+$('#start').on('click', function() {
+  displayQuestion();
+  $('#start').hide();
+}); 
 
 
 

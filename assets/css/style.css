@@ -93,7 +93,7 @@ h1 {
     font-size: 28px; 
     font-family: "Garamond", "Book Antigua", "Bookman Old Style";  
 }
-.answerOption:hover {background-color: rgb(216, 219, 203);; }  
+.answerOption:hover {background-color: rgb(216, 219, 203)};  
 
 .answerOption:active {
     background-color: rgb(216, 219, 203);
@@ -101,7 +101,7 @@ h1 {
     transform: translateY(4px);
 }
 
-#winLoseBox {
+#questionResult {
     font-size: 80px; 
     font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
     font-weight: bold;
