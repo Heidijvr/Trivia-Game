@@ -2,91 +2,109 @@ body, html {
     background-image: url("../images/chef.jpg");   
 }
 
-
-.container {
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 70px;
-    padding-top: 30px;
+h1 {
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style";    
     text-align: center;
-    border: 4px solid  hsla(60, 1%, 61%, 0.767);
-    background-color: rgb(221, 214, 214) 
+    color: hsla(60, 2%, 8%, 0.918);
+}
+.title {
+    margin: auto;   
+    text-align: center;
+    font-weight: bold; 
+    font-size: 76px;
 }
 
+.heading {
+    border: 4px solid  hsla(60, 1%, 61%, 0.767);
+    background-color: rgb(247, 217, 162);
+    margin-top: 40px; 
+}
   
 #remainingTime {
-    font-size: 30px;
+    text-align: center;
+    font-size: 34px;
     font-weight: bold; 
     font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
-    margin-top: 60px;
-    width:400px;
-    height:70px;
-    background-color:rgb(169, 197, 171);
-    text-align: center;
- }
-
-h1 {
-    font-size: 86px;
-    font-weight: bold;
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    background-color: rgb(169, 197, 171); 
+    border: 4px solid  hsla(60, 1%, 61%, 0.767); 
 }
-
-#start {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 50px;
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";
-    box-shadow: 0 5px hsla(60, 1%, 61%, 0.767);
-    transform: translateY(4px);
- }
-
- #questionText {
+ 
+#questionText {
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold; 
     font-family: "Garamond", "Book Antigua", "Bookman Old Style";
-    
-    
 }
 
 .questionBox {
-    width: 720px;
-    height: 85px;
+    width: 800px;
+    height: 100px;
+    display:block;
+    margin: 0 auto;
     background-color:rgb(169, 197, 171); 
     border: 4px solid  hsla(60, 1%, 61%, 0.767);
 }
 
-.gameBox {
-    text-align: center;
-    font-size: 26px;   
-    font-weight: bold; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";   
-    margin-right: 600px;
-    margin-left: 600px;   
+.gameBox {  
+    width: 400px;    
+    margin-right: auto;
+    margin-left: auto; 
 }
 
-.answerOptionBox {   
-    text-align: left;  
-    background-color: rgb(199, 86, 86);
-    border: 4px solid  hsla(300, 1%, 61%, 0.767); 
-     
+#answersBox { 
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;  
+    text-align: left;
+    padding-left: 40px;  
+    background-color: rgb(230, 205, 159);
+    border: 4px solid  hsla(300, 1%, 61%, 0.767);
+    width: 400px;          
+}
+
+.answerOptionBox {
+    font-size: 24px; 
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style";  
+    font-weight: bold; 
 }
 
 #start {
-    font-size: 24px; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";  
-    margin-left: 46%;
-    margin-right: -54%;
-    transform: translate(-50%, -50%);    
-    box-shadow: 0 5px hsla(60, 1%, 61%, 0.767);
-    transform: translateY(4px);
+    font-weight: bold; 
+    font-size: 26px; 
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
+    margin-top: 60px; 
+    background-color: #26a8be        
  }
 
-#winLoseBox {
-    font-size: 24px; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
-    font-weight: bold;   
+#start:hover {background-color: #4ecce2}
+
+#start:active {
+  background-color: #4ecce2;
+  box-shadow: 0 5px rgb(56, 98, 175);
+  transform: translateY(4px);
 }
 
+.answerOption {
+    font-size: 28px; 
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style";  
+}
+.answerOption:hover {background-color: rgb(216, 219, 203);; }  
 
-   
+.answerOption:active {
+    background-color: rgb(216, 219, 203);
+    box-shadow: 0 5px rgb(199, 201, 195);
+    transform: translateY(4px);
+}
+
+#winLoseBox {
+    font-size: 80px; 
+    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
+    font-weight: bold;
+    text-align: center;   
+}
+

@@ -13,52 +13,49 @@
 <body>
        
   
-<div class="container">
-    <div id="game">
-    <h1>Food Trivia Game</h1>
-       
-        
-    </div>
-    <div id="results">
-    </div>
-</div>
+    <div class="container">      
+        <div class="jumbotron heading">
+            <h1 class="display-4 title">Food Trivia Game</h1>
+        </div>
+        </div> 
 
-<p id="remainingTime">Remaining Time: <span id="secondsRemaining"></span></p>
+<div id="remainingTime">Remaining Time: <span id="secondsRemaining"></span></div>
   
 
 
-<div id="questionAnswerBox" class="gameBox">
+<div class="text-center" id="questionAnswerBox" >
     <div class="questionBox">
        <span id="questionText">What is the answer?</span>
     </div>
-    <div id="answersBox">
-            <div class="answerOptionBox"> 
-                <span class="answerLabel">A</span>
-                <span id="optionA" class="answerOption">Answer A</span>
-            </div>
-            <div class="answerOptionBox"> 
-                <span class="answerLabel">B</span>
-                <span class="answerOption">Answer B</span>
-            </div>
-            <div class="answerOptionBox"> 
-                <span class="answerLabel">C</span>
-                <span class="answerOption">Answer C</span>
-            </div>
-            <div class="answerOptionBox"> 
-                <span class="answerLabel">D</span>
-                <span class="answerOption">Answer D</span>
-            </div>
-    </div>
-    
-</div>
+</div>   
 <div id="winLoseBox" class="gameBox">
-        You lose!
+    You lose!
 </div>
- 
-<div><button id="start" class="btn btn-info btn-lg">Start Game</button>
-    <div class="row">             
-</div>        
+<div id="answersBox">
+    <div class="answerOptionBox"> 
+        <span class="answerLabel">A. </span>
+        <span id="optionA" class="answerOption">Answer A</span>
+    </div>
+    <div class="answerOptionBox"> 
+        <span class="answerLabel">B. </span>
+        <span id="optionB" class="answerOption">Answer B</span>
+    </div>
+    <div class="answerOptionBox"> 
+        <span class="answerLabel">C. </span>
+        <span id="optionC" class="answerOption">Answer C</span>
+    </div>
+    <div class="answerOptionBox"> 
+        <span class="answerLabel">D. </span>
+        <span id="optionD" class="answerOption">Answer D</span>
+    </div>
 </div>
+    
+
+<div class="text-center"><button id="start" class="btn btn-default">Start Game</button>         
+</div> 
+             
+       
+
 
 
 <div id="status"></div>
