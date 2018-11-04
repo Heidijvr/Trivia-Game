@@ -13,13 +13,13 @@
 <body>
        
   
-<div>      
+<div class="container">      
         <div class="jumbotron heading">
             <h1 class="display-4 title">Food Trivia Game</h1>
         </div>
 </div> 
 
-<div id="quizContainer" class="container">
+<div id="quizContainer" class="gameBox">
 
     <div id="remainingTime">Remaining Time: <span id="secondsRemaining"></span></div>
     <div class="text-center" id="questionAnswerBox" >
@@ -48,27 +48,34 @@
 </div>    
 
 
-<div id="questionResult" class="gameBox container">
+<div id="questionResult" class="gameBox gameBox">
         <div id="outcome">
             Correct!
         </div>
         <div id="correctAnswerBox">
             Correct Answer: <span id="correctAnswer"></span>
         </div>
-        <div id="pictureBox">
-            Giphy
-        </div>
 </div>
 
+<div id="scoreBox" class="gameBox">
+    <div>
+        Correct: <span id="correctScore"></span>
+    </div>
+    <div>
+        Incorrect: <span id="incorrectScore"></span>
+    </div>
+    <div>
+        Unanswered: <span id="unansweredScore"></span>    
+    </div>
+</div>
+    
 
-
-<div class="text-center container">
+<div id="buttonBox" class="text-center gameBox">
     <button id="start" class="btn btn-default">
         Start Game
     </button>         
 </div> 
              
-       
 
 
 

@@ -71,11 +71,15 @@ var startTimer = function() {
 
 var showQuestionResult = function() {
   clearInterval(countDownTimer);
-  $('#quizContainer').hide();
+  $('.gameBox').hide();
   $('#questionResult').show();
 
-  setTimeout(displayQuestion, 3000);
-  currentQuestionIndex++;
+  if(currentQuestionIndex < allQuestions.length - 1) {
+    setTimeout(displayQuestion, 3000);
+    currentQuestionIndex++;  
+  } else {
+    setTimeout(showFinalScore, 3000);
+  }
 };
 
 $('.answerOptionBox').on('click', function() {
@@ -98,8 +102,8 @@ $('.answerOptionBox').on('click', function() {
 
 var displayQuestion = function() {
   currentQuestion = allQuestions[currentQuestionIndex];
+  $('.gameBox').hide();
   $('#quizContainer').show();
-  $('#questionResult').hide();
   $('#questionText').text(currentQuestion.question); 
 
   $('.answerOption').each(function(index, element) {
@@ -111,20 +115,38 @@ var displayQuestion = function() {
   startTimer();
 };
 
-$(document).ready(function() {
+$('#start').on('click', function() {
+  displayQuestion();
+}); 
+
+var showFinalScore = function() {
+  $('#correctScore').text(correctCount);
+  $('#incorrectScore').text(incorrectCount);
+  $('#unansweredScore').text(unansweredCount);
+
+  $('.gameBox').hide();
+  $('#scoreBox').show();
+  $('#start').text('Play Again');
+  $('#buttonBox').show();
+
+  resetScore();
+}
+
+var resetScore = function() {
   correctCount = 0;
   incorrectCount = 0;
   unansweredCount = 0;
   currentQuestionIndex = 0;
-  $('#quizContainer').hide();
-  $('#questionResult').hide();
-  $('#start').show();
+}
+
+$(document).ready(function() {
+  resetScore();
+  $('.gameBox').hide();
+  $('#buttonBox').show();
 });
 
-$('#start').on('click', function() {
-  displayQuestion();
-  $('#start').hide();
-}); 
+
+
 
 
 
