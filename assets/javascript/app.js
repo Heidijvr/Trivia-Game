@@ -51,7 +51,7 @@ var currentQuestion;
 
 var startTimer = function() {
   clearInterval(countDownTimer);
-  seconds = 15;
+  seconds = 30;
   $('#secondsRemaining').text(seconds);
 
   countDownTimer = setInterval(function() {
