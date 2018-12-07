@@ -5,9 +5,9 @@ This project is part of the front-end curriculum for the University of Washingto
 
 -----
 
-#**Challenges:**
+**Challenges:**
 
-#**Project Requirements:**
+**Project Requirements:**
 * To show one question until the player answers it, otherwise their time runs out.
 * If players select the correct answer, a screen appears which congratulates them for choosing the right option. After a few seconds, the next question is displayed without any user input.
 * If players choose the wrong answer, a screen appears which informs them that they selected the wrong option together with the correct answer. Wait a few seconds, then show the next question.
@@ -15,7 +15,7 @@ This project is part of the front-end curriculum for the University of Washingto
 
 -----
 
-#**Suggested future challenges:**
+**Suggested future challenges:**
 * Update the navigation to let users skip to any question number.
 * Create custom messages for each level of results. For example, if someone scores 8/10 or higher, call them a _quiz master_.
 * Add a countdown timer to see if people can beat the clock.
