@@ -17,7 +17,6 @@ This project is part of the front-end curriculum for the University of Washingto
 -----
 
 #**Suggested future challenges:**
-* Give users a summary of their answers after they submit.
 * Update the navigation to let users skip to any question number.
 * Create custom messages for each level of results. For example, if someone scores 8/10 or higher, call them a _quiz master_.
 * Add a countdown timer to see if people can beat the clock.
