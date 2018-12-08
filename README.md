@@ -5,8 +5,6 @@ This project is part of the front-end curriculum for the University of Washingto
 
 -----
 
-**Challenges:**
-
 **Project Requirements:**
 * To show one question until the player answers it, otherwise their time runs out.
 * If players select the correct answer, a screen appears which congratulates them for choosing the right option. After a few seconds, the next question is displayed without any user input.
