@@ -1,6 +1,6 @@
 ## **Trivia Game**
 
-A stylized Trivia Browser browser game, built with JavaScript for the logic, jQuery to manipulate HTML, HTML and CSS for styling ([Play the Trivia Game!](https://heidijvr.github.io/TriviaGame/)).
+A stylized Trivia Browser browser game, built with JavaScript for the logic, jQuery to manipulate HTML, HTML and CSS for styling ([Play the Trivia Game!](https://heidijvr.github.io/Trivia-Game/)).
 This project is part of the front-end curriculum for the University of Washington Part-time Coding Bootcamp. It served to consolidate newly acquired skills in Javascript, html and css, with a timer.
 
 -----
