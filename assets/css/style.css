@@ -1,44 +1,52 @@
+body { 
+    background: url("../images/Food.jpg");
+    background-size: 100vw;
+    background-repeat:no-repeat;
+    background-position: center center; 
+    background-attachment: fixed; 
+    /* min-height: 90%; */
+} 
+   
 body, html {
-    background-image: url("../images/chef.jpg");   
+    overflow-x: hidden;
+    height: auto;
 }
 
 h1 {
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";    
+    font-family: 'Crete Round', serif;   
     text-align: center;
     color: hsla(60, 2%, 8%, 0.918);
-}
-.title {
-    margin: auto;   
     text-align: center;
     font-weight: bold; 
     font-size: 76px;
 }
 
-.heading {
-    border: 4px solid  hsla(60, 1%, 61%, 0.767);
-    background-color: rgb(202, 225, 247);
-    margin-top: 40px; 
+#heading {
+    /* border: 4px solid  hsla(60, 1%, 61%, 0.767);
+    background-color: rgb(202, 225, 247); */
+    margin-top: 150px; 
+    margin-bottom: 150px;
 }
   
 #remainingTime {
     text-align: center;
     font-size: 34px;
     font-weight: bold; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
+    font-family: 'Crete Round', serif; 
     margin-top: 30px; 
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
     width: 500px;
-    background-color: rgb(169, 197, 171); 
-    border: 4px solid  hsla(60, 1%, 61%, 0.767); 
+    background-color: rgb(206, 51, 4); 
+    border: 4px solid hsla(0, 17%, 98%, 0.767);
 }
  
-#questionText {
+#questionText { 
     text-align: center;
     font-size: 34px;
     font-weight: bold; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";
+    font-family: 'Crete Round', serif;
 }
 
 .questionBox {
@@ -46,8 +54,8 @@ h1 {
     height: 100px;
     display:block;
     margin: 0 auto;
-    background-color:rgb(169, 197, 171); 
-    border: 4px solid  hsla(60, 1%, 61%, 0.767);
+    background-color:rgb(255, 248, 148); 
+    border: 4px solid  hsla(0, 17%, 98%, 0.767);
 }
 
 #answersBox { 
@@ -56,26 +64,26 @@ h1 {
     margin-left: auto;  
     text-align: left;
     padding-left: 40px;  
-    background-color: rgb(207, 193, 164);
-    border: 4px solid hsla(60, 1%, 61%, 0.767);
+    background-color: rgb(255, 248, 148);
+    border: 4px solid hsla(0, 17%, 98%, 0.767);
     width: 400px;          
 }
 
 .answerOptionBox {
     font-size: 24px; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";  
+    font-family: 'Crete Round', serif; 
     font-weight: bold; 
 }
 
 #start {
     font-weight: bold; 
     font-size: 26px; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
-    margin-top: 60px; 
-    background-color: #26a8be        
+    font-family: 'Crete Round', serif; 
+    /* margin-top: 60px;  */
+    background-color: #26a8be;        
  }
 
-#start:hover {background-color: #4ecce2}
+#start:hover {background-color: #4ecce2};
 
 #start:active {
   background-color: #4ecce2;
@@ -84,36 +92,40 @@ h1 {
 }
 
 .answerOption {
+    font-weight: bold; 
     font-size: 28px; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style";
-    border: 4px solid  hsla(60, 12%, 71%, 0.767);
+    font-family: 'Crete Round', serif;
+    /* border: 4px solid  hsla(60, 3%, 82%, 0.767); */
     padding-right: 90px;
+    background-color: rgb(253, 184, 56);
 }
-.answerOption:hover {background-color: rgb(216, 219, 203)};  
+
+.answerOption:hover {background-color:rgb(200, 201, 197); };  
 
 .answerOption:active {
-    background-color: rgb(216, 219, 203);
-    box-shadow: 0 5px rgb(199, 201, 195);
+    background-color: rgb(247, 248, 241);
+    box-shadow: 0 5px rgb(249, 253, 240);
     transform: translateY(4px);
 }
 
 #questionResult {
-    font-size: 80px; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
+    font-size: 76px; 
+    font-family: 'Crete Round', serif;
     font-weight: bold;
-    text-align: center;   
+    text-align: center; 
+    color: rgb(206, 51, 4);   
 }
 
 #scoreBox {
     font-size: 40px; 
-    font-family: "Garamond", "Book Antigua", "Bookman Old Style"; 
+    font-family: 'Crete Round', serif; 
     font-weight: bold;
     text-align: center;
     margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
     width: 500px;   
     background-color: rgb(235, 207, 171);
-    border: 4px solid  hsla(60, 1%, 61%, 0.767);
+    border: 4px solid  hsla(60, 1%, 86%, 0.767);
 }
-

@@ -1,6 +1,6 @@
 var allQuestions = [
   {
-    question: 'Sukiyaki is a popular hot pot dish from what country?',
+    question: 'Sukiyaki is a popular hot pot dish from which country?',
     options: ['Japan', 'China', 'Taiwan', 'South-Korea'],
     answerIndex: 0
   },
@@ -10,7 +10,7 @@ var allQuestions = [
     answerIndex: 1
   },
   {
-    question: 'Sriracha is type of hot sauce named after a city located in what country?',
+    question: 'Sriracha is type of hot sauce named after a city located in which country?',
     options: ['India', 'Sri-Lanka', 'Thailand', 'Chile'],
     answerIndex: 2
   },
@@ -75,10 +75,10 @@ var showQuestionResult = function() {
   $('#questionResult').show();
 
   if(currentQuestionIndex < allQuestions.length - 1) {
-    setTimeout(displayQuestion, 3000);
+    setTimeout(displayQuestion, 2000);
     currentQuestionIndex++;  
   } else {
-    setTimeout(showFinalScore, 3000);
+    setTimeout(showFinalScore, 2000);
   }
 };
 

@@ -106,8 +106,6 @@ questions: {
       
         console.log(output);
         return output.slice(output.length - count, output.length);
-      }
-      
-      
-      
+      } 
+            
       console.log(getRandomizedArray(467, 5));
